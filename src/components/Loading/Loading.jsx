@@ -5,7 +5,7 @@ export const Loading = () => {
   return (
     <div className="loading">
       <img src={LoadingGif} alt="Loading..." />
-      <h2>Loading Wildfire Events...</h2>
+      <h2>Tracking Wildfire Events...</h2>
     </div>
   );
 };

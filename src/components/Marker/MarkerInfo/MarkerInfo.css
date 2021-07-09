@@ -4,10 +4,18 @@
   left: 3rem;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  max-width: 25em;
+  min-width: 16em;
+  max-width: 28em;
   color: white;
+  border-radius: 6px;
 }
 
 .markerInfo > h2 {
   margin-bottom: 1rem;
+}
+
+.markerInfo > p {
+  margin-bottom: 0.5rem;
+  color: lightgray;
+  font-weight: 500;
 }

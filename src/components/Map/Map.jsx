@@ -15,8 +15,13 @@ export const Map = ({ zoom, center, wildfireEvents }) => {
         defaultZoom={zoom}
       >
         {wildfireEvents.map((event) => {
+          // Wildfire event id is 8
           if (event.categories[0].id === 8) {
-            // Wildfire event id is 8
+            const markerInfoObject = {
+              id: event.id,
+              title: event.title,
+            };
+
             return (
               <Marker
                 key={event.id}
