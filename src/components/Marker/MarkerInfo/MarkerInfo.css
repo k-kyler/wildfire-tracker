@@ -1,0 +1,13 @@
+.markerInfo {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  max-width: 25em;
+  color: white;
+}
+
+.markerInfo > h2 {
+  /* margin-bottom: ; */
+}
