@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Wildfire Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that tracking natural wildfire events through out the world, this project was featured by The Earth Observatory Natural Event Tracker API of NASA and Google Map React.
 
 ## Available Scripts
 

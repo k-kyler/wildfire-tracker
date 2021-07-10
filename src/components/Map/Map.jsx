@@ -36,7 +36,9 @@ export const Map = ({ zoom, center, wildfireEvents }) => {
         })}
       </GoogleMapReact>
 
-      {markerInfo && <MarkerInfo {...markerInfo} />}
+      {markerInfo && (
+        <MarkerInfo {...markerInfo} setMarkerInfo={setMarkerInfo} />
+      )}
     </div>
   );
 };

@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 99;
+  background-color: rgb(63, 63, 231);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header > img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.header > h1 {
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .header > img {
+    height: 2rem;
+  }
+
+  .header > h1 {
+    font-size: large;
+  }
+}

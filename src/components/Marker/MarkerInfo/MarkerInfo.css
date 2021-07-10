@@ -1,21 +1,68 @@
 .markerInfo {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  min-width: 16em;
-  max-width: 28em;
   color: white;
   border-radius: 6px;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
 }
 
-.markerInfo > h2 {
+.markerInfo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+.markerInfo__header > span {
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.markerInfo__header > span:hover {
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.markerInfo__header > span:not(:hover) {
+  transition: all 0.3s ease-in-out;
 }
 
 .markerInfo > p {
   margin-bottom: 0.5rem;
   color: lightgray;
   font-weight: 500;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .markerInfo {
+    top: 10.5rem;
+    min-width: 17.5em;
+  }
+
+  .markerInfo__header > h2 {
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) {
+  .markerInfo {
+    top: 12rem;
+    min-width: 28em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .markerInfo {
+    min-width: 30em;
+  }
 }

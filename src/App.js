@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { Header } from "./components/Header/Header";
 import { Loading } from "./components/Loading/Loading";
 import { Map } from "./components/Map/Map";
+import "./App.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +28,10 @@ function App() {
   }, []);
 
   return (
-    <>{isLoading ? <Loading /> : <Map wildfireEvents={wildfireEvents} />}</>
+    <div className="app">
+      <Header />
+      {isLoading ? <Loading /> : <Map wildfireEvents={wildfireEvents} />}
+    </div>
   );
 }
 
